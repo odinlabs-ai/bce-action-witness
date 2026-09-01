@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "bce": {
+      "args": [
+        "--no-install",
+        "bce-mcp"
+      ],
+      "command": "npx"
+    }
+  }
+}

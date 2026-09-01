@@ -1,0 +1,16 @@
+name: blueprint conformance
+on: [pull_request]
+permissions:
+  contents: read
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: blueprint-conformance/bce@5d8a3d96b184ad47d6cdec235f80cde1fb1e9a42
+        with:
+          engine: local
+          repo: .
+          comment: "false"

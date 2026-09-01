@@ -1,0 +1,16 @@
+{
+  "blueprintRef": "no-direct-http-client@0.1.0",
+  "engine": "blueprint-conformance/bce@5d8a3d96b184ad47d6cdec235f80cde1fb1e9a42",
+  "generatedFiles": [
+    ".bce-mode.json",
+    ".blueprints/no-direct-http-client.blueprint.json",
+    ".github/workflows/blueprint-conformance.yml",
+    ".mcp.json",
+    "AGENTS.md"
+  ],
+  "harness": "agents",
+  "mode": "advisory",
+  "ratified": false,
+  "schemaVersion": "1",
+  "state": "proposed"
+}

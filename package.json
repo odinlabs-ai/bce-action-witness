@@ -1,0 +1,16 @@
+{
+  "name": "bce-action-witness",
+  "version": "1.0.0",
+  "description": "This repository is a transparent consumer-side witness for the public BCE onboarding path. It is separate from `blueprint-conformance/bce` and runs BCE through the generated GitHub Action at an immutable commit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx --no-install bce gate --repo . --all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "bce-engine": "github:blueprint-conformance/bce#5d8a3d96b184ad47d6cdec235f80cde1fb1e9a42"
+  }
+}

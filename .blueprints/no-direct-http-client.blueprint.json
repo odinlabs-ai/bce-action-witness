@@ -1,0 +1,60 @@
+{
+  "apiVersion": "blueprint-conformance/v1alpha1",
+  "approvals": [
+    {
+      "role": "blueprint-steward",
+      "stage": "ratify"
+    }
+  ],
+  "architecture": {
+    "components": [],
+    "relationships": [
+      {
+        "allowed": false,
+        "from": "*",
+        "to": "axios",
+        "type": "imports"
+      }
+    ]
+  },
+  "constraints": [
+    {
+      "from": "*",
+      "id": "forbidden-dependency-axios",
+      "severity": "critical",
+      "to": "axios",
+      "type": "forbiddenDependency"
+    }
+  ],
+  "evidenceRequirements": [
+    {
+      "onMissing": "block",
+      "required": true,
+      "type": "staticAst"
+    }
+  ],
+  "extraction": {
+    "minFiles": 1,
+    "paths": [
+      "src/**/*.ts"
+    ],
+    "profile": "plugin-surface"
+  },
+  "intentRefs": [
+    "architecture/network-boundary"
+  ],
+  "kind": "EngineeringBlueprint",
+  "metadata": {
+    "id": "no-direct-http-client",
+    "status": "draft",
+    "version": "0.1.0"
+  },
+  "scope": {
+    "paths": [
+      "src/**/*.ts"
+    ],
+    "repositories": [
+      "odinlabs-ai/bce-action-witness"
+    ]
+  }
+}

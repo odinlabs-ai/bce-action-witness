@@ -1,0 +1,9 @@
+* @odinlabs-ai
+
+# BCE policy surfaces require explicit owner review.
+/.blueprints/ @odinlabs-ai
+/.bce-mode.json @odinlabs-ai
+/.bce-adoption.json @odinlabs-ai
+/.github/workflows/blueprint-conformance.yml @odinlabs-ai
+/AGENTS.md @odinlabs-ai
+/.mcp.json @odinlabs-ai
