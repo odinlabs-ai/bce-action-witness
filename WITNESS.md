@@ -17,7 +17,8 @@ This record distinguishes two claims:
 
 ## Creator-maintained external Action runs
 
-Run URLs and observed outcomes will be appended only after GitHub has executed them.
+The sequence begins with a clean source change, then plants a direct `axios` import, then removes it.
+Run URLs and observed outcomes are appended only after GitHub has executed them.
 
 ## Independent contributor protocol
 
