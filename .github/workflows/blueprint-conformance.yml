@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: blueprint-conformance/bce@5d8a3d96b184ad47d6cdec235f80cde1fb1e9a42
+      - uses: blueprint-conformance/bce@ef5b806dcf58b1100db9ca512c6f7683d3873697
         with:
           engine: local
           repo: .
